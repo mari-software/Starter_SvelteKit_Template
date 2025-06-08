@@ -1,6 +1,5 @@
 <script lang="ts">
 	import DaisyUiAlert from '$lib/component/library/daisyui/DaisyUIAlert.svelte';
-	import DaisyUiAvatar from '$lib/component/library/daisyui/DaisyUIAvatar.svelte';
 	import { LucideXCircle } from '@lucide/svelte';
 
 	let showAlert = false;
@@ -21,5 +20,3 @@
 	<LucideXCircle />
 	<p>Error On Line Number 32.</p>
 </DaisyUiAlert>
-
-<DaisyUiAvatar></DaisyUiAvatar>

@@ -2,7 +2,10 @@
 
 > created at: June 8, 2025 | updated at: June 10, 2025 | version: 0.1.0
 
-<img src="./static/favicon.png" alt="isolated" width="200"/>
+<p style="text-align: center;">
+  <img src="./static/favicon.png" alt="SvelteKit Logo" width="100"/>
+  <img src="./static/favicon.svg" alt="Mari Logo" width="100"/>
+</p>
 
 ## Table Of Contents
 
