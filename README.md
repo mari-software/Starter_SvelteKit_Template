@@ -2,8 +2,8 @@
 
 > created at: June 8, 2025 | updated at: June 10, 2025 | version: 0.1.0
 
-<p style="display: flex; justify-content: center;">
-  <img src="./static/mari.png" alt="Mari Logo" width="100" height="100"/>
+<p style="display: flex; justify-content: center; width: fit-content; margin: 0 auto;">
+  <img src="./static/mari.svg" alt="Mari Logo" width="100" height="100"/>
   <img src="./static/sveltekit.svg" alt="SvelteKit Logo" width="100" height="100" />
 </p>
 
@@ -34,7 +34,7 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/username/project-name.git
+   git clone https://github.com/mari-software/Starter_SvelteKit_Template.git
    ```
 
 2. Install dependencies:

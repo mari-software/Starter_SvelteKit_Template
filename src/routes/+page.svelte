@@ -1,5 +1,6 @@
 <script lang="ts">
 	import DaisyUiAlert from '$lib/component/library/daisyui/DaisyUIAlert.svelte';
+	import DaisyUiBadge from '$lib/component/library/daisyui/DaisyUIBadge.svelte';
 	import { LucideXCircle } from '@lucide/svelte';
 
 	let showAlert = false;
@@ -16,7 +17,13 @@
 </p>
 <button onclick={toggleAlert}>Toggle Alert</button>
 
-<DaisyUiAlert show={showAlert} className="d-alert-error">
+<DaisyUiAlert
+	position="bottom"
+	show={showAlert}
+	className="d-alert-error"
+>
 	<LucideXCircle />
 	<p>Error On Line Number 32.</p>
 </DaisyUiAlert>
+
+<DaisyUiBadge className="d-badge-primary">Hello</DaisyUiBadge>

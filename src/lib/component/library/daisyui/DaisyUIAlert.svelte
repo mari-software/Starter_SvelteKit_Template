@@ -1,31 +1,47 @@
 <!-- How To -->
-<!-- 
-<DaisyUiAlert show={showAlert} className="d-alert-error">
+<!--
+<DaisyUiAlert
+	position="bottom"
+	show={showAlert}
+	className="d-alert-error"
+>
 	<LucideXCircle />
 	<p>Error On Line Number 32.</p>
-</DaisyUiAlert> 
+</DaisyUiAlert>
 -->
 
 <script lang="ts">
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	let {
 		show = false,
+		position = 'top',
 		className,
 		children
 	} = $props<{
 		show: boolean;
+		position?: 'top' | 'bottom';
 		className?: string;
 		children?: () => void;
 	}>();
+
+	const flyYOffset = position === 'top' ? -100 : 100;
+
+	const positionClasses = position === 'top' ? 'top-20' : 'bottom-20';
+
+	const transitionOptions = {
+		y: flyYOffset,
+		duration: 300,
+		opacity: 0
+	};
 </script>
 
 {#if show}
 	<div
 		role="alert"
-		class="d-alert {className} absolute top-20 left-1/2 mx-auto w-[70vw] -translate-x-1/2"
-		in:fly={{ y: -100, duration: 100 }}
-		out:fade={{ duration: 100 }}
+		class="d-alert {className} absolute left-1/2 z-10 w-[70vw] -translate-x-1/2 {positionClasses}"
+		in:fly={transitionOptions}
+		out:fly={transitionOptions}
 	>
 		{@render children()}
 	</div>
