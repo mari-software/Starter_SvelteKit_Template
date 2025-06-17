@@ -12,7 +12,7 @@
 		"Template"
 	],
 	"license": "GPL-3.0-only",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -26,9 +26,13 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "pnpm run test:unit -- --run && pnpm run test:e2e",
-		"test:e2e": "playwright test"
+		"test:e2e": "playwright test",
+		"changeset": "changeset",
+		"changeset:add": "changeset add",
+		"changeset:version": "changeset version"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.29.4",
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
 		"@lucide/svelte": "^0.513.0",
@@ -46,6 +50,7 @@
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",
 		"globals": "^16.0.0",
+		"init": "^0.1.2",
 		"jsdom": "^26.0.0",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
