@@ -1,6 +1,6 @@
 <!-- How To -->
 <!--
-<DaisyUiAvatar className="d-mask-heart">
+<DaisyUiAvatar >
 	<img
 		src="https://img.daisyui.com/images/profile/demo/distracted3@192.webp"
 		alt="example"
@@ -15,8 +15,6 @@
 	}>();
 </script>
 
-<div class="d-avatar">
-	<div class="d-mask {className}">
-		{@render children()}
-	</div>
+<div class="d-avatar {className}">
+	{@render children()}
 </div>

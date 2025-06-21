@@ -15,7 +15,7 @@
 
 	let {
 		show = false,
-		position = 'top',
+		position,
 		className,
 		children
 	} = $props<{

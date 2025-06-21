@@ -8,3 +8,6 @@
 	prefix: 'd-';
 	logs: false;
 }
+
+/* Import Css From lib asset here */
+@import "./lib/asset/style/font.style.css"; 

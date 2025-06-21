@@ -1,3 +1,8 @@
+<!-- How To -->
+<!-- 
+<DaisyUiButton className="d-btn-primary" onClick={() => console.log("Hello")}>Button</DaisyUiButton>
+ -->
+
 <script lang="ts">
 	let { className, onClick, children } = $props<{
 		className?: string;
