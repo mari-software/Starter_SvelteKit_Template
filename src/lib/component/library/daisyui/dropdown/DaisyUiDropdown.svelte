@@ -5,6 +5,6 @@
 	}>();
 </script>
 
-<details class="d-dropdown  {className}" open>
+<details class="d-dropdown  {className}">
   {@render children()}
 </details>

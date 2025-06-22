@@ -5,6 +5,6 @@
 	}>();
 </script>
 
-<ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm {className}">
+<ul class="d-menu d-dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm {className}">
     {@render children()}
 </ul>
