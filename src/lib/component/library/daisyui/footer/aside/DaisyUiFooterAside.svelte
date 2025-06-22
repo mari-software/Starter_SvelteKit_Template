@@ -1,10 +1,11 @@
 <script lang="ts">
-    let { children, className } = $props<{
+    let {className, children} = $props<{
         className?: string;
         children: () => void;
     }>();
 </script>
 
-<div class="d-dock {className}">
+
+<aside class="{className}">
     {@render children()}
-</div>
+  </aside>
