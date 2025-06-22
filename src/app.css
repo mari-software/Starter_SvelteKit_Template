@@ -11,3 +11,7 @@
 
 /* Import Css From lib asset here */
 @import "./lib/asset/style/font.style.css"; 
+
+body {
+	margin: 5rem;
+}
