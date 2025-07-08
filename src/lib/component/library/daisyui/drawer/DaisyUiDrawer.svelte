@@ -5,6 +5,6 @@
 	}>();
 </script>
 
-<footer class="d-footer {className}">
+<div class="d-drawer {className}">
 	{@render children()}
-</footer>
+</div>

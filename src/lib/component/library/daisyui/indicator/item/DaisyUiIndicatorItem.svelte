@@ -5,6 +5,8 @@
 	}>();
 </script>
 
-<footer class="d-footer {className}">
-	{@render children()}
-</footer>
+<span class="d-indicator-item {className}">
+	{#if children}
+		{@render children()}
+	{/if}
+</span>

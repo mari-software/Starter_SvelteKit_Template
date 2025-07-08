@@ -5,6 +5,6 @@
 	}>();
 </script>
 
-<footer class="d-footer {className}">
+<div class="d-join {className}">
 	{@render children()}
-</footer>
+</div>

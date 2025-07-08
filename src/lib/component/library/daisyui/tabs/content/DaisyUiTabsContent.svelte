@@ -5,6 +5,8 @@
 	}>();
 </script>
 
-<footer class="d-footer {className}">
+<div
+	class="d-tab-content bg-base-100 border-base-300 p-6 {className}"
+>
 	{@render children()}
-</footer>
+</div>

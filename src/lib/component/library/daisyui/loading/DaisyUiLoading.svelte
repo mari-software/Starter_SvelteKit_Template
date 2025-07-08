@@ -5,6 +5,6 @@
 	}>();
 </script>
 
-<footer class="d-footer {className}">
+<span class="d-loading d-loading-spinner {className}">
 	{@render children()}
-</footer>
+</span>

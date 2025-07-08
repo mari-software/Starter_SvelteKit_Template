@@ -1,10 +1,10 @@
 <script lang="ts">
-	let { className, children } = $props<{
+	let { children, className } = $props<{
 		className?: string;
 		children: () => void;
 	}>();
 </script>
 
-<footer class="d-footer {className}">
+<div class="d-mockup-code {className}">
 	{@render children()}
-</footer>
+</div>

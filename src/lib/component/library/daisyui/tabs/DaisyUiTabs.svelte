@@ -5,6 +5,7 @@
 	}>();
 </script>
 
-<footer class="d-footer {className}">
+<!-- name of each tab group should be unique -->
+<div class="d-tabs d-tabs-lift {className}">
 	{@render children()}
-</footer>
+</div>
